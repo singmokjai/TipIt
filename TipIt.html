@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+    <link rel= "stylesheet" href ="./assets/css/style.css">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+    <script src="assets/js/TipIt.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>TipIt</h1>
+        <div id="calculator">
+            <form>
+                <p>How much was your bill?</p>
+                $ <input id="Bill" type=""text" placeholder="Bill Amount">
+                <p>How was your service?</p>
+                
+                <select id="serviceQual">
+                        <option disabled selected value="0">-- Choose an Option --</option>
+                        <option value="0.1">10&#37; &#45; Below Expectations</option>
+                        <option value="0.15">15&#37; &#45; Standard</option>
+                        <option value="0.18">18&#37; &#45; Above Average</option>
+                        <option value="0.2">20&#37; &#45; Amazing</option>
+                </select>
+
+                <p>How many people are sharing the bill?</p>
+                <input id="peopleShare" type="text" placeholder="Number of people"> people
+                <br>
+                <br>
+                <button type="button" id="calculate">Calculate!</button>
+            </form>
+        </div>
+
+        <div id="totalTip">
+            <sup>$</sup><span id="tip">0.00</span>
+        </div>
+    </div>
+
+</body>
+</html>
