@@ -4,17 +4,28 @@ function calculateTip () {
 
     // Grabbing input values
 
-    var billAmt = $('#Bill').value;
+    var billAmt = $('#Bill').val();
 
-    var serviceQual = $('#serviceQual').value;
+    var serviceQual = $('select#serviceQual').val();
 
-    var numPeople = $('#peopleShare').value;
+    console.log(serviceQual);
+
+    var numPeople = $('#peopleShare').val();
+
 
     // Validating input values
 
-    if (billAmt === "" || serviceQual === 0) {
+    if (billAmt === "" || serviceQual === "") {
 
-        alert("Please enter values");
+        alert("Please enter missing values.");
+        return;
+    }
+
+    // Validate service quality
+
+    if (serviceQual === "" || numPeople === "") {
+
+        alert("Please select quality of service.");
         return;
     }
 
@@ -24,27 +35,40 @@ function calculateTip () {
 
         alert("Please enter number of people splitting bill.");
         return;
-    }
+        
+    } 
+
+    
+
+    
 
     // Calculate Tip
 
     var total = (billAmt * serviceQual) / numPeople;
 
+    // console.log(total)
+
+
     // Round tip amount
 
-    total = Math.round(total * 100) / 100;
+    roundedTotal = Math.round(total * 100) / 100;
 
     // Fixed two digit decimal
 
     total = total.toFixed(2);
 
+
+
     $('#tip').html(total);
 }
 
     // Calling the calculate function
-
-    $('#calculate').click(function() {
+    $(document).ready(function() {
+    $('#calculate').on("click", function() {
+    
         calculateTip();
+
+        
     });
 
-
+})
