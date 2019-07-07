@@ -1,0 +1,30 @@
+html, body {
+
+    background-image: url('../images/tip.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 3px solid;
+    border-radius: 10px 30px 30px 10px;
+    box-shadow: 10px 5px blue;
+
+}
+
+#totalTip {
+
+    padding-top: 30px;
+    margin-bottom: 50px;
+
+}
