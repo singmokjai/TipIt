@@ -4,6 +4,7 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'DM Serif Text', serif;
+    height: 100vh;
 
 }
 
@@ -14,24 +15,40 @@ html, body {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    margin-top: 30px;
-    border: 3px solid;
-    border-radius: 10px 30px 30px 10px;
-    box-shadow: 10px 5px blue;
+    margin-top: 50px;
+    border: 3px solid #a4b0be;
+    border-radius: 45px/15px;
+    box-shadow: 10px 5px #60a3bc;
+    background-image: url('../images/calculator.png');
+    background-size: cover;
 
 }
 
 .container h1 {
 
     font-style: italic;
-    
+    color: #ff7f50;
+
+}
+
+.container p, form {
+
+    color: #747d8c;
+
 }
 
 #totalTip {
 
-    padding-top: 30px;
+    padding-top: 40px;
     margin-bottom: 50px;
+
+}
+
+#tip {
+
+    font-size: 30px;
+    color: #2ed573;
 
 }
